@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+    Макрос - это записанная последовательность команд, 
+    которую выполняет excel. Вот мои макросы:
+    
+   Sub Макрос1()
+   <br>
+
+ Макрос1 Макрос
+<br>
+ Сочетание клавиш: Ctrl+й
+<br>
+
+    ActiveCell.FormulaR1C1 = "фывапр"
+    <br>
+    Range("C5").Select
+    <br>
+End Sub
+<br>
+Макрос 1 ("фывапр") (Это макрос для копировния в другие ячейки текста)
+<BR>
+    
+    Sub Макрос2()
+    <br>
+
+ Макрос2 Макрос
+<br>
+Сочетание клавиш: Ctrl+л
+<br>
+
+    Cells.Replace What:="фыв", Replacement:="123", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+        <br>
+End Sub
+<br>
+ Это макрос для изменения шрифта текста, так же он ограничен скриптом на 1 лист excel
+<br>
+
+
+If Worksheets(ActiveSheet.Name).Name = "Ëèñò1" Then
+<BR>
+    Selection.Font.Bold = True
+    <BR>
+    Selection.Font.Italic = True
+    <BR>
+    End If
+    <BR>
+End Sub
+
+
+    
+
+  </body>
+
+</html>
